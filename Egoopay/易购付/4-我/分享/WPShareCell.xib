@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="WPShareCell" customModule="Egoopay" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="125" height="168"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="125" height="168"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hC0-IS-yoq">
+                        <rect key="frame" x="10" y="10" width="105" height="105"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="hC0-IS-yoq" secondAttribute="height" multiplier="1:1" id="EbM-Oi-lrr"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UYS-bK-axC">
+                        <rect key="frame" x="47" y="115" width="31" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xRG-kh-10v">
+                        <rect key="frame" x="0.0" y="0.0" width="125" height="168"/>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="hC0-IS-yoq" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="Abi-oK-1JT"/>
+                <constraint firstItem="UYS-bK-axC" firstAttribute="top" secondItem="hC0-IS-yoq" secondAttribute="bottom" id="ByG-m5-EVb"/>
+                <constraint firstItem="xRG-kh-10v" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="GPZ-R1-zzg"/>
+                <constraint firstItem="hC0-IS-yoq" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="MqX-dh-f42"/>
+                <constraint firstItem="xRG-kh-10v" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="PZ3-IX-zPe"/>
+                <constraint firstAttribute="bottom" secondItem="xRG-kh-10v" secondAttribute="bottom" id="WeE-ha-bGU"/>
+                <constraint firstItem="hC0-IS-yoq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="fNK-yc-fY2"/>
+                <constraint firstAttribute="trailing" secondItem="xRG-kh-10v" secondAttribute="trailing" id="oCa-07-Cwu"/>
+                <constraint firstItem="UYS-bK-axC" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="yaK-a9-QH0"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="125" height="168"/>
+            <connections>
+                <outlet property="share_button" destination="xRG-kh-10v" id="R9w-Tg-8fN"/>
+                <outlet property="title_imageView" destination="hC0-IS-yoq" id="npH-xI-ycE"/>
+                <outlet property="title_label" destination="UYS-bK-axC" id="KpM-n4-63e"/>
+            </connections>
+            <point key="canvasLocation" x="62.5" y="111"/>
+        </collectionViewCell>
+    </objects>
+</document>

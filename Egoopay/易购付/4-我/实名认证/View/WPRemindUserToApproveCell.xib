@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="346" id="KGk-i7-Jjw" customClass="WPRemindUserToApproveCell" customModule="Egoopay" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="348" height="330"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="348" height="329.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_approveAvater" translatesAutoresizingMaskIntoConstraints="NO" id="zRX-gx-vvp">
+                        <rect key="frame" x="124" y="15" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="9qp-eI-bGT"/>
+                            <constraint firstAttribute="width" secondItem="zRX-gx-vvp" secondAttribute="height" multiplier="1:1" id="YDi-Cq-i3s"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="为了资金安全，请账户实名认证" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5v-rG-9Fh">
+                        <rect key="frame" x="31" y="130" width="285.5" height="24"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="实名认证后，可有效保障易购付的资金安全，快速完成充值、提现、支付等服务。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRe-UO-TKL">
+                        <rect key="frame" x="15" y="164" width="318" height="33.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2LC-ER-vx4">
+                        <rect key="frame" x="15" y="217.5" width="318" height="45"/>
+                        <color key="backgroundColor" red="0.011764705882352941" green="0.47058823529411764" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="VQY-R5-F94"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                        <state key="normal" title="立即去认证">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uSy-HH-2M1">
+                        <rect key="frame" x="145" y="274.5" width="58" height="29"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="暂不认证">
+                            <color key="titleColor" red="0.40784313729999999" green="0.40784313729999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="2LC-ER-vx4" firstAttribute="top" secondItem="ZRe-UO-TKL" secondAttribute="bottom" constant="20" id="1eQ-2E-e3I"/>
+                    <constraint firstItem="ZRe-UO-TKL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="1tG-Yr-cIU"/>
+                    <constraint firstItem="zRX-gx-vvp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="4cd-HR-mPA"/>
+                    <constraint firstItem="ZRe-UO-TKL" firstAttribute="top" secondItem="d5v-rG-9Fh" secondAttribute="bottom" constant="10" id="8We-V9-8bh"/>
+                    <constraint firstAttribute="bottom" secondItem="uSy-HH-2M1" secondAttribute="bottom" constant="26" id="8yG-hA-NCQ"/>
+                    <constraint firstItem="uSy-HH-2M1" firstAttribute="top" secondItem="2LC-ER-vx4" secondAttribute="bottom" constant="12" id="Nsh-QJ-z9q"/>
+                    <constraint firstItem="d5v-rG-9Fh" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="OZn-oI-Qhc"/>
+                    <constraint firstItem="uSy-HH-2M1" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="QJf-8a-xAV"/>
+                    <constraint firstItem="d5v-rG-9Fh" firstAttribute="top" secondItem="zRX-gx-vvp" secondAttribute="bottom" constant="15" id="SX5-zb-Phl"/>
+                    <constraint firstAttribute="trailing" secondItem="ZRe-UO-TKL" secondAttribute="trailing" constant="15" id="WZ6-6d-Snc"/>
+                    <constraint firstItem="2LC-ER-vx4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="bpq-QS-hCU"/>
+                    <constraint firstAttribute="trailing" secondItem="2LC-ER-vx4" secondAttribute="trailing" constant="15" id="njx-P6-XqE"/>
+                    <constraint firstItem="zRX-gx-vvp" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="rhh-Q4-FSg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cancel_button" destination="uSy-HH-2M1" id="NC1-Oq-Cj1"/>
+                <outlet property="confirm_button" destination="2LC-ER-vx4" id="lFu-TK-AaZ"/>
+            </connections>
+            <point key="canvasLocation" x="-490" y="99"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_approveAvater" width="166" height="166"/>
+    </resources>
+</document>

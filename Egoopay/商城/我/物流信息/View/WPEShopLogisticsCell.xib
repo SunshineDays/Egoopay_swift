@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="99" id="KGk-i7-Jjw" customClass="WPEShopLogisticsCell" customModule="Egoopay" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="348" height="74"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="348" height="73.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RGm-Bg-mfG">
+                        <rect key="frame" x="45" y="15" width="283" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.61568627450980395" green="0.61568627450980395" blue="0.61568627450980395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkq-gu-0UX">
+                        <rect key="frame" x="45" y="44" width="31" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.61568627450980395" green="0.61568627450980395" blue="0.61568627450980395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u6z-vA-8Rj">
+                        <rect key="frame" x="25" y="25" width="1" height="49"/>
+                        <color key="backgroundColor" red="0.84313725490196079" green="0.84313725490196079" blue="0.84313725490196079" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="GSl-oH-01b"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AWR-Nf-OiH">
+                        <rect key="frame" x="25" y="0.0" width="1" height="20"/>
+                        <color key="backgroundColor" red="0.84313725490196079" green="0.84313725490196079" blue="0.84313725490196079" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="SHL-EF-0pD"/>
+                            <constraint firstAttribute="height" constant="20" id="sGb-03-9OY"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_eShop_logistics_A" translatesAutoresizingMaskIntoConstraints="NO" id="rKk-8U-iRc">
+                        <rect key="frame" x="15" y="15" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="rKk-8U-iRc" secondAttribute="height" multiplier="1:1" id="BFu-YY-Buq"/>
+                            <constraint firstAttribute="width" constant="20" id="IVr-o6-WlG"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="u6z-vA-8Rj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="1ca-Tn-rlc"/>
+                    <constraint firstItem="rKk-8U-iRc" firstAttribute="centerX" secondItem="AWR-Nf-OiH" secondAttribute="centerX" id="3G3-BJ-cgm"/>
+                    <constraint firstItem="RGm-Bg-mfG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="5ua-Er-I39"/>
+                    <constraint firstItem="rKk-8U-iRc" firstAttribute="top" secondItem="RGm-Bg-mfG" secondAttribute="top" id="AOm-rn-4xh"/>
+                    <constraint firstItem="u6z-vA-8Rj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="KSb-OF-JEq"/>
+                    <constraint firstItem="AWR-Nf-OiH" firstAttribute="leading" secondItem="u6z-vA-8Rj" secondAttribute="leading" id="NUp-gl-HH2"/>
+                    <constraint firstAttribute="trailing" secondItem="RGm-Bg-mfG" secondAttribute="trailing" constant="20" id="Pcj-eN-byU"/>
+                    <constraint firstItem="AWR-Nf-OiH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Vba-YQ-VHw"/>
+                    <constraint firstItem="pkq-gu-0UX" firstAttribute="leading" secondItem="RGm-Bg-mfG" secondAttribute="leading" id="WAp-01-eOG"/>
+                    <constraint firstAttribute="bottom" secondItem="pkq-gu-0UX" secondAttribute="bottom" constant="15" id="Zvm-ZV-fPg"/>
+                    <constraint firstItem="pkq-gu-0UX" firstAttribute="top" secondItem="RGm-Bg-mfG" secondAttribute="bottom" constant="12" id="asP-mr-60e"/>
+                    <constraint firstAttribute="bottom" secondItem="u6z-vA-8Rj" secondAttribute="bottom" constant="-0.5" id="leW-vr-r3P"/>
+                    <constraint firstItem="RGm-Bg-mfG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="45" id="qgz-OQ-7Zr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <inset key="separatorInset" minX="40" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="lineDown_view" destination="u6z-vA-8Rj" id="10h-h1-ROW"/>
+                <outlet property="lineUp_view" destination="AWR-Nf-OiH" id="2Dx-u9-Eif"/>
+                <outlet property="sign_imageView" destination="rKk-8U-iRc" id="dbe-vz-gYg"/>
+                <outlet property="time_label" destination="pkq-gu-0UX" id="AXO-NJ-H8e"/>
+                <outlet property="title_label" destination="RGm-Bg-mfG" id="9kD-w5-hze"/>
+            </connections>
+            <point key="canvasLocation" x="39" y="79"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_eShop_logistics_A" width="42" height="42"/>
+    </resources>
+</document>

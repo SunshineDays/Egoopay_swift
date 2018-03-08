@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="95" id="KGk-i7-Jjw" customClass="WPSelectCardCell" customModule="Egoopay" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="333" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="299" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WWT-7V-zVc">
+                        <rect key="frame" x="15" y="15" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="CKu-Mj-EuM"/>
+                            <constraint firstAttribute="width" secondItem="WWT-7V-zVc" secondAttribute="height" multiplier="1:1" id="VVt-ku-8I3"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="银行卡类型" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sW7-fv-VCv">
+                        <rect key="frame" x="70" y="10" width="87" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="尾号XXXX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9gG-eh-iM0">
+                        <rect key="frame" x="70" y="42.5" width="66" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择银行卡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvS-V1-rM9">
+                        <rect key="frame" x="70" y="25" width="98" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="9gG-eh-iM0" secondAttribute="bottom" constant="10" id="AJa-tJ-nGz"/>
+                    <constraint firstItem="WWT-7V-zVc" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="EdW-nZ-hFJ"/>
+                    <constraint firstItem="9gG-eh-iM0" firstAttribute="leading" secondItem="sW7-fv-VCv" secondAttribute="leading" id="XoL-h4-boZ"/>
+                    <constraint firstItem="WWT-7V-zVc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="bbI-AN-Vdv"/>
+                    <constraint firstItem="sW7-fv-VCv" firstAttribute="leading" secondItem="WWT-7V-zVc" secondAttribute="trailing" constant="15" id="fMK-KY-PE9"/>
+                    <constraint firstItem="sW7-fv-VCv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="fSb-Uz-mMW"/>
+                    <constraint firstItem="bvS-V1-rM9" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="gZr-wR-PMQ"/>
+                    <constraint firstItem="bvS-V1-rM9" firstAttribute="leading" secondItem="WWT-7V-zVc" secondAttribute="trailing" constant="15" id="nal-ff-mM0"/>
+                    <constraint firstItem="WWT-7V-zVc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="ylR-40-Q4Z"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bank_imageView" destination="WWT-7V-zVc" id="2Rz-UW-UYR"/>
+                <outlet property="name_label" destination="sW7-fv-VCv" id="TAP-gp-rEn"/>
+                <outlet property="number_label" destination="9gG-eh-iM0" id="em0-IR-oRI"/>
+                <outlet property="select_label" destination="bvS-V1-rM9" id="uS0-bb-Fjn"/>
+            </connections>
+            <point key="canvasLocation" x="32.5" y="77.5"/>
+        </tableViewCell>
+    </objects>
+</document>

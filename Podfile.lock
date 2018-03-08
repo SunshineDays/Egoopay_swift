@@ -1,0 +1,62 @@
+PODS:
+  - Alamofire (4.5.1)
+  - AMap3DMap (3.3.2)
+  - AMapLocation (1.1.1)
+  - AMapSearch (3.2.0)
+  - Charts (3.0.5):
+    - Charts/Core (= 3.0.5)
+  - Charts/Core (3.0.5)
+  - DZNEmptyDataSet (1.8.1)
+  - IQKeyboardManager (4.0.13)
+  - JCore (1.1.7)
+  - JPush (3.0.8):
+    - JCore (~> 1.1.7)
+  - MJExtension (3.0.13)
+  - MJRefresh (3.1.15.3)
+  - OpenShare (0.0.1)
+  - SDCycleScrollView (1.75):
+    - SDWebImage (>= 4.0.0)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
+  - SnapKit (4.0.0)
+  - SVProgressHUD (2.1.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - AMap3DMap
+  - AMapLocation
+  - AMapSearch
+  - Charts
+  - DZNEmptyDataSet
+  - IQKeyboardManager
+  - JPush
+  - MJExtension
+  - MJRefresh
+  - OpenShare
+  - SDCycleScrollView
+  - SDWebImage
+  - SnapKit
+  - SVProgressHUD
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  AMap3DMap: 6315b7489cb60b1c47bb51169b409c20efa5f527
+  AMapLocation: fc0245146ef90811f9590d428e9035a2a64f4526
+  AMapSearch: a885f0702578a441a22cb66fa74f8918c6d19e6f
+  Charts: 45cdc985b764c838b35ee47eb1365d15735f6d1a
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  IQKeyboardManager: 8eab4d8111418414619d1df8e4779ce5d0f8d7e2
+  JCore: f7459c81c135281a874a6beafdd321666adcc834
+  JPush: 9574d072cc37e93fa293ba69b43ce763c440943a
+  MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
+  OpenShare: a560580dbb729d5c0c3cc1ee84cd6aa4a07e94c6
+  SDCycleScrollView: 884b88f0266dd4708a0e1934975c69cb971707b1
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
+
+PODFILE CHECKSUM: 95d04cba8a1a75da0fbc51c712196759de84207b
+
+COCOAPODS: 1.3.1

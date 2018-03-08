@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="WPEShopMyOrderOnlyOneCollectionCell" customModule="Egoopay" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="356" height="75"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="356" height="75"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OQl-MP-aa2">
+                        <rect key="frame" x="3" y="3" width="69" height="69"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="OQl-MP-aa2" secondAttribute="height" multiplier="1:1" id="UOw-7q-Ns1"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AlG-er-gwb">
+                        <rect key="frame" x="82" y="13" width="274" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Qn-Gt-dUP">
+                        <rect key="frame" x="82" y="51" width="33" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QKk-N7-NrU">
+                        <rect key="frame" x="344" y="52.5" width="12" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="AlG-er-gwb" firstAttribute="leading" secondItem="OQl-MP-aa2" secondAttribute="trailing" constant="10" id="1fE-vT-ZWc"/>
+                <constraint firstItem="QKk-N7-NrU" firstAttribute="centerY" secondItem="6Qn-Gt-dUP" secondAttribute="centerY" id="2mi-GP-cnF"/>
+                <constraint firstItem="6Qn-Gt-dUP" firstAttribute="leading" secondItem="AlG-er-gwb" secondAttribute="leading" id="CEc-nU-26n"/>
+                <constraint firstAttribute="bottom" secondItem="OQl-MP-aa2" secondAttribute="bottom" constant="3" id="FtC-Ub-8UZ"/>
+                <constraint firstItem="OQl-MP-aa2" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="3" id="Gad-bi-pkD"/>
+                <constraint firstAttribute="trailing" secondItem="QKk-N7-NrU" secondAttribute="trailing" id="Jxm-JV-k0W"/>
+                <constraint firstItem="6Qn-Gt-dUP" firstAttribute="bottom" secondItem="OQl-MP-aa2" secondAttribute="bottom" constant="-5" id="TqK-mf-Oh7"/>
+                <constraint firstItem="AlG-er-gwb" firstAttribute="top" secondItem="OQl-MP-aa2" secondAttribute="top" constant="10" id="bpF-NM-f0j"/>
+                <constraint firstAttribute="trailing" secondItem="AlG-er-gwb" secondAttribute="trailing" id="cx9-US-KPe"/>
+                <constraint firstItem="OQl-MP-aa2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="3" id="qiR-oF-t7u"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="356" height="75"/>
+            <connections>
+                <outlet property="content_label" destination="6Qn-Gt-dUP" id="Ecr-b7-Df5"/>
+                <outlet property="number_label" destination="QKk-N7-NrU" id="sJy-HP-mhS"/>
+                <outlet property="title_iamgeView" destination="OQl-MP-aa2" id="vCg-fW-11k"/>
+                <outlet property="title_label" destination="AlG-er-gwb" id="ZQk-9Y-WLr"/>
+            </connections>
+            <point key="canvasLocation" x="-2" y="79.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="236" id="KGk-i7-Jjw" customClass="WPBalanceCell" customModule="Egoopay" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="236"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="343" height="235.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="账户余额(元)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K7h-Xj-2iq">
+                        <rect key="frame" x="20" y="0.0" width="87.5" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="CTN-Iu-Upl"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJG-kQ-vnP">
+                        <rect key="frame" x="20" y="80" width="155" height="135.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="65"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="K7h-Xj-2iq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="M1V-lR-YFR"/>
+                    <constraint firstItem="gJG-kQ-vnP" firstAttribute="leading" secondItem="K7h-Xj-2iq" secondAttribute="leading" id="TbU-kN-ehr"/>
+                    <constraint firstAttribute="bottom" secondItem="gJG-kQ-vnP" secondAttribute="bottom" constant="20" id="UzX-HK-efG"/>
+                    <constraint firstItem="K7h-Xj-2iq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="XfR-4V-pcd"/>
+                    <constraint firstItem="gJG-kQ-vnP" firstAttribute="top" secondItem="K7h-Xj-2iq" secondAttribute="bottom" id="ged-Mg-3Oq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="balance_label" destination="gJG-kQ-vnP" id="4me-NT-ZYT"/>
+            </connections>
+            <point key="canvasLocation" x="15.5" y="148"/>
+        </tableViewCell>
+    </objects>
+</document>

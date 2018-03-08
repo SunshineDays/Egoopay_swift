@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="246" id="KGk-i7-Jjw" customClass="WPEnrollInviterCell" customModule="Egoopay" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="345" height="246"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="345" height="245.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请输入您的推荐人的手机号码（可选）" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZI-Xo-mye">
+                        <rect key="frame" x="0.0" y="0.0" width="345" height="100"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="ab9-Ln-63A"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="推荐人手机号码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MFf-0X-e0A">
+                        <rect key="frame" x="15" y="100" width="315" height="60"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="ana-tV-0KG"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="njP-qZ-yGy">
+                        <rect key="frame" x="15" y="190" width="315" height="45"/>
+                        <color key="backgroundColor" red="0.011764705882352941" green="0.47058823529411764" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="V1E-Vh-9g0"/>
+                        </constraints>
+                        <state key="normal" title="完成">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="MFf-0X-e0A" firstAttribute="top" secondItem="eZI-Xo-mye" secondAttribute="bottom" id="3Gi-jy-nPd"/>
+                    <constraint firstItem="eZI-Xo-mye" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="5f7-P4-DtN"/>
+                    <constraint firstItem="njP-qZ-yGy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="M4n-3b-6JP"/>
+                    <constraint firstItem="MFf-0X-e0A" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="bqX-dk-kWg"/>
+                    <constraint firstAttribute="trailing" secondItem="eZI-Xo-mye" secondAttribute="trailing" id="btF-yd-eXJ"/>
+                    <constraint firstAttribute="bottom" secondItem="njP-qZ-yGy" secondAttribute="bottom" constant="10.5" id="eiy-VM-K4Q"/>
+                    <constraint firstAttribute="trailing" secondItem="njP-qZ-yGy" secondAttribute="trailing" constant="15" id="gGV-W0-BRf"/>
+                    <constraint firstItem="njP-qZ-yGy" firstAttribute="top" secondItem="MFf-0X-e0A" secondAttribute="bottom" constant="30" id="ivH-Um-uiv"/>
+                    <constraint firstItem="eZI-Xo-mye" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="o8V-UP-T0a"/>
+                    <constraint firstAttribute="trailing" secondItem="MFf-0X-e0A" secondAttribute="trailing" constant="15" id="xH7-4q-Wro"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="confirm_button" destination="njP-qZ-yGy" id="K7i-4X-0rW"/>
+                <outlet property="phone_textField" destination="MFf-0X-e0A" id="PZF-5h-vTf"/>
+            </connections>
+            <point key="canvasLocation" x="21.5" y="153"/>
+        </tableViewCell>
+    </objects>
+</document>

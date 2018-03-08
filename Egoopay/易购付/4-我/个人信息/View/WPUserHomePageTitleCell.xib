@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="198" id="KGk-i7-Jjw" customClass="WPUserHomePageTitleCell" customModule="Egoopay" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="210.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nBO-x7-5OC">
+                        <rect key="frame" x="116" y="160" width="143" height="36"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <state key="normal" title="介绍一下你自己">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7N8-9h-61h">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="85"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6Y-E8-pf7">
+                                <rect key="frame" x="142.5" y="40" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="N6Y-E8-pf7" secondAttribute="height" multiplier="1:1" id="ymh-Wc-6ez"/>
+                                    <constraint firstAttribute="width" constant="90" id="yo5-9p-4h4"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="icon_defaultAvater"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.011764705882352941" green="0.47058823529411764" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="N6Y-E8-pf7" secondAttribute="bottom" constant="-45" id="6TE-j0-0BR"/>
+                            <constraint firstItem="N6Y-E8-pf7" firstAttribute="centerX" secondItem="7N8-9h-61h" secondAttribute="centerX" id="Nxw-Ga-Rs2"/>
+                            <constraint firstAttribute="height" constant="85" id="jhy-jK-Uhz"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="7N8-9h-61h" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="1Rw-xE-5zM"/>
+                    <constraint firstItem="7N8-9h-61h" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="L94-9p-o2C"/>
+                    <constraint firstItem="nBO-x7-5OC" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="UM2-zm-2uo"/>
+                    <constraint firstAttribute="trailing" secondItem="7N8-9h-61h" secondAttribute="trailing" id="ese-eb-bX6"/>
+                    <constraint firstAttribute="bottom" secondItem="nBO-x7-5OC" secondAttribute="bottom" constant="14.5" id="rhF-Xu-uN1"/>
+                    <constraint firstItem="nBO-x7-5OC" firstAttribute="top" secondItem="7N8-9h-61h" secondAttribute="bottom" constant="75" id="vJJ-zA-NsI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="avater_button" destination="N6Y-E8-pf7" id="2Ee-Ga-H6X"/>
+                <outlet property="nickname_button" destination="nBO-x7-5OC" id="lNs-93-Fia"/>
+                <outlet property="theme_view" destination="7N8-9h-61h" id="Fep-0D-0Nf"/>
+            </connections>
+            <point key="canvasLocation" x="-294.5" y="63"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_defaultAvater" width="45" height="45"/>
+    </resources>
+</document>
